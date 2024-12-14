@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+
+<body>
+    <h1> Paises</h1>
+    Qual é o seu pais : <input typer="text" name="txt" id="txt">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar() {
+            var txt = window.document.querySelector('input#txt')
+            var res = window.document.querySelector('div#res')
+            var pais = String(txt.value)
+            res.innerHTML = `<p> O seu pais é <strong> ${pais}<strong></p>`
+            if (pais == 'brasil') {
+                res.innerHTML += `<p>Voce é <strong>Brasileiro</strong> </p>`
+            } 
+            else 
+            {
+                if (pais == 'franca'){
+                res.innerHTML += `<p> voce é estrangeiro </p>`
+                }
+            }
+            res.innerHTML += `<p>Te felicidade </p>`
+        }
+    </script>
+</body>
+
+</html>
