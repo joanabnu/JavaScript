@@ -6,7 +6,7 @@ console.log(`O primeiro valor do vetor é ${num[0]}`)
 console.log(`O VETOR TEM ${num.length} posiçoes`)
 let pos = num.indexOf(4)
 if (pos == -1){
-    console.log(`nao foi emcontrado`)
+    console.log(`nao foi encontrado`)
 }else{
     console.log(`${pos}`)
 }
